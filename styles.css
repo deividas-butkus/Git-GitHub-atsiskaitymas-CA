@@ -183,7 +183,6 @@ dialog {
     transition: transform 0.3s;
     &:hover {
       transform: rotate(100deg);
-      fill: red;
       transition-delay: 0.5s;
     }
   }
