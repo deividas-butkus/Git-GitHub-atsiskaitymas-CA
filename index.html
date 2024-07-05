@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>METAVERSE</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./main.js"></script>
+    <script src="./main.js" defer></script>
     <link rel="icon" href="./resources/meta-logo.ico" type="image/x-icon" />
   </head>
   <body>
@@ -29,8 +29,8 @@
       <article class="hero">
         <h1>Metaverse</h1>
         <p>
-          Innovation that will shape how we <span>connect</span> in the world an
-          <span>opportunity</span> for everybody.
+          Innovation that will shape how we <a href="">connect</a> in the world
+          an <a>opportunity</a> for everybody.
         </p>
       </article>
       <article class="navbar">
@@ -38,13 +38,150 @@
         <div><!-- pseudo div for placing and styling white lines --></div>
         <nav>
           <ul>
-            <li>Intro</li>
-            <li>Work</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li id="introLi">Intro</li>
+            <li id="workLi">Work</li>
+            <li id="aboutLi">About</li>
+            <li id="contactLi">Contact</li>
           </ul>
         </nav>
       </article>
     </section>
+    <dialog id="intro">
+      <h2>Intro</h2>
+      <svg
+        fill="white"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 320 512"
+      >
+        <path
+          d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+        />
+      </svg>
+      <video controls>
+        <source src="./resources/tab-1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quas
+        incidunt, consequatur quo iusto possimus consequuntur fugit voluptatibus
+        placeat ad porro magnam quis amet, laudantium maiores. Assumenda eum
+        nihil nisi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat
+        optio nam quisquam, quos, hic a inventore quod repudiandae ut nulla modi
+        possimus iure? Voluptatibus labore cumque blanditiis animi doloremque
+        quasi impedit quod? Maxime reprehenderit quod possimus. Sapiente nihil
+        reiciendis impedit labore, officiis minima dolores sequi voluptates iste
+        rerum animi ducimus fugit temporibus commodi consectetur quos amet
+        dolore earum est, iusto soluta. Mollitia, illo accusantium in ratione
+        placeat minus porro, est sequi aliquam odit, repudiandae nihil eaque
+        inventore voluptas quasi omnis. Ipsa illo amet beatae distinctio ea non
+        delectus porro quibusdam nihil dicta voluptates, natus laudantium
+        labore? Blanditiis, consequuntur sapiente!
+      </p>
+    </dialog>
+    <dialog id="work">
+      <h2>Work</h2>
+      <svg
+        fill="white"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 320 512"
+      >
+        <path
+          d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+        />
+      </svg>
+      <div>
+        <img src="./resources/tab-2.jpg" alt="Work" />
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quas
+        incidunt, consequatur quo iusto possimus consequuntur fugit voluptatibus
+        placeat ad porro magnam quis amet, laudantium maiores. Assumenda eum
+        nihil nisi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat
+        optio nam quisquam, quos, hic a inventore quod repudiandae ut nulla modi
+        possimus iure? Voluptatibus labore cumque blanditiis animi doloremque
+        quasi impedit quod? Maxime reprehenderit quod possimus. Sapiente nihil
+        reiciendis impedit labore, officiis minima dolores sequi voluptates iste
+        rerum animi ducimus fugit temporibus commodi consectetur quos amet
+        dolore earum est, iusto soluta. Mollitia, illo accusantium in ratione
+        placeat minus porro, est sequi aliquam odit, repudiandae nihil eaque
+        inventore voluptas quasi omnis. Ipsa illo amet beatae distinctio ea non
+        delectus porro quibusdam nihil dicta voluptates, natus laudantium
+        labore? Blanditiis, consequuntur sapiente!
+      </p>
+    </dialog>
+    <dialog id="about">
+      <h2>About</h2>
+      <svg
+        fill="white"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 320 512"
+      >
+        <path
+          d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+        />
+      </svg>
+      <div>
+        <img src="./resources/tab-3.jpg" alt="Work" />
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quas
+        incidunt, consequatur quo iusto possimus consequuntur fugit voluptatibus
+        placeat ad porro magnam quis amet, laudantium maiores. Assumenda eum
+        nihil nisi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat
+        optio nam quisquam, quos, hic a inventore quod repudiandae ut nulla modi
+        possimus iure? Voluptatibus labore cumque blanditiis animi doloremque
+        quasi impedit quod? Maxime reprehenderit quod possimus. Sapiente nihil
+        reiciendis impedit labore, officiis minima dolores sequi voluptates iste
+        rerum animi ducimus fugit temporibus commodi consectetur quos amet
+        dolore earum est, iusto soluta. Mollitia, illo accusantium in ratione
+        placeat minus porro, est sequi aliquam odit, repudiandae nihil eaque
+        inventore voluptas quasi omnis. Ipsa illo amet beatae distinctio ea non
+        delectus porro quibusdam nihil dicta voluptates, natus laudantium
+        labore? Blanditiis, consequuntur sapiente!
+      </p>
+    </dialog>
+    <dialog id="contact">
+      <h2>Contact</h2>
+      <svg
+        fill="white"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 320 512"
+      >
+        <path
+          d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+        />
+      </svg>
+      <div>
+        <img src="./resources/tab-4.jpg" alt="Contact" />
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quas
+        incidunt, consequatur quo iusto possimus consequuntur fugit voluptatibus
+        placeat ad porro magnam quis amet, laudantium maiores. Assumenda eum
+        nihil nisi.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quaerat
+        optio nam quisquam, quos, hic a inventore quod repudiandae ut nulla modi
+        possimus iure? Voluptatibus labore cumque blanditiis animi doloremque
+        quasi impedit quod? Maxime reprehenderit quod possimus. Sapiente nihil
+        reiciendis impedit labore, officiis minima dolores sequi voluptates iste
+        rerum animi ducimus fugit temporibus commodi consectetur quos amet
+        dolore earum est, iusto soluta. Mollitia, illo accusantium in ratione
+        placeat minus porro, est sequi aliquam odit, repudiandae nihil eaque
+        inventore voluptas quasi omnis. Ipsa illo amet beatae distinctio ea non
+        delectus porro quibusdam nihil dicta voluptates, natus laudantium
+        labore? Blanditiis, consequuntur sapiente!
+      </p>
+    </dialog>
   </body>
 </html>
