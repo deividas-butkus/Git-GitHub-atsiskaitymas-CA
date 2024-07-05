@@ -50,7 +50,6 @@ section#mainPage {
     > p {
       letter-spacing: 1px;
       line-height: 1.5;
-      text-align: left;
       text-align: justify;
       > span {
         text-decoration: underline dotted;
