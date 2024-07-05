@@ -4,6 +4,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  color: #fff;
 }
 
 section#mainPage {
@@ -24,27 +25,34 @@ section#mainPage {
     height: 34%;
     border-bottom: 1px solid #fff;
     display: grid;
-    place-items: center;
-    > svg {
-      height: 40px;
-      padding: 30px;
-      border: 1px solid #fff;
-      border-radius: 50%;
-      transform: translateY(60px);
+    grid-template: 3fr 1fr 1fr / 1fr 1fr;
+    place-items: stretch;
+    > div:nth-child(1) {
+      grid-area: 1 / 1 / 2 / 3;
     }
-    > div.verticalLine {
-      position: absolute;
-      top: 280px;
-      width: 1px;
-      height: 58px;
-      background-color: white;
+    > div:nth-child(2) {
+      grid-area: 2 / 1 / 3 / 3;
+      place-self: center;
+      > svg {
+        height: 40px;
+        padding: 33px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transform: translateY(3px);
+      }
+    }
+    > div:nth-child(3) {
+      grid-area: 3 / 1 / 4 / 2;
+      border-right: 0.5px solid #fff;
+    }
+    > div:nth-child(4) {
+      border-left: 0.5px solid #fff;
     }
   }
   > article.hero {
     padding: 0 7px 0;
     height: 20%;
     border-bottom: 1px solid #fff;
-    color: #fff;
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
