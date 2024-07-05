@@ -14,7 +14,7 @@ section#mainPage {
     height: 100%;
     z-index: -1;
   }
-  > div.gem {
+  > article.gem {
     height: 34%;
     border-bottom: 1px solid #fff;
     display: grid;
@@ -34,7 +34,7 @@ section#mainPage {
       background-color: white;
     }
   }
-  > div.metaverse {
+  > article.hero {
     padding: 0 7px 0;
     height: 20%;
     border-bottom: 1px solid #fff;
