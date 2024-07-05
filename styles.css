@@ -189,6 +189,13 @@ dialog {
   > video {
     width: 90%;
   }
+  > div {
+    width: 90%;
+    > img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
   > p {
     width: 90%;
     line-height: 2;
