@@ -1,4 +1,10 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
 
 section#mainPage {
   position: relative;
@@ -46,11 +52,14 @@ section#mainPage {
     > h1 {
       letter-spacing: 3px;
       text-align: center;
+      font-weight: 500;
     }
     > p {
       letter-spacing: 1px;
       line-height: 1.5;
       text-align: justify;
+      font-weight: 200;
+      text-underline-offset: 0.2em;
       > span {
         text-decoration: underline dotted;
       }
