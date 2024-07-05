@@ -3,7 +3,10 @@ const workLi = document.querySelector("#workLi");
 const aboutLi = document.querySelector("#aboutLi");
 const contactLi = document.querySelector("#contactLi");
 
-const svgCross = document.querySelector("dialog svg");
+const introSvgCross = document.querySelector("#intro > svg");
+const workSvgCross = document.querySelector("#work > svg");
+const aboutSvgCross = document.querySelector("#about > svg");
+const contactSvgCross = document.querySelector("#contact > svg");
 
 const dialogIntro = document.querySelector("dialog#intro");
 const dialogWork = document.querySelector("dialog#work");
@@ -61,18 +64,18 @@ dialogContact.addEventListener("close", () => {
   showContent();
 });
 
-svgCross.addEventListener("click", () => {
+introSvgCross.addEventListener("click", () => {
   dialogIntro.close();
 });
 
-svgCross.addEventListener("click", () => {
+workSvgCross.addEventListener("click", () => {
   dialogWork.close();
 });
 
-svgCross.addEventListener("click", () => {
+aboutSvgCross.addEventListener("click", () => {
   dialogAbout.close();
 });
 
-svgCross.addEventListener("click", () => {
+contactSvgCross.addEventListener("click", () => {
   dialogContact.close();
 });
