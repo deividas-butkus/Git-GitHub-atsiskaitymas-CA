@@ -9,7 +9,7 @@ body {
 
 section#mainPage {
   position: relative;
-  height: 100vh;
+  height: 120vh;
   background: url("./resources/bg.jpg") no-repeat center center;
   background-size: cover;
   overflow: hidden;
@@ -147,7 +147,8 @@ dialog {
   color: #fff;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow-y: visible;
+  overflow-x: hidden;
   > h2 {
     padding: 0 50px 30px;
     text-transform: uppercase;
@@ -162,10 +163,10 @@ dialog {
     position: absolute;
     top: 30px;
     right: 30px;
-    transition: transform 0.3s;
+    transition: transform 0.5s;
     &:hover {
       transform: rotate(100deg);
-      transition-delay: 0.5s;
+      /* transition-delay: 0.5s; */
     }
   }
   > video {
